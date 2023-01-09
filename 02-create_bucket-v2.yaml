@@ -1,0 +1,9 @@
+Resources:
+  HelloBucket:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+        #BucketName: cloudformation-test-hello-bucket
+        AccessControl: PublicRead
+        WebsiteConfiguration:
+            IndexDocument: index.html
+            ErrorDocument: error.html
